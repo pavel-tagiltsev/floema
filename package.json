@@ -2,6 +2,7 @@
   "name": "floema",
   "version": "1.0.0",
   "scripts": {
+    "server": "nodemon app.js",
     "build": "webpack --progress --config webpack.config.build.js",
     "development": "webpack serve --progress --config webpack.config.development.js",
     "start": "npm run development"
@@ -36,5 +37,10 @@
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.4.0",
     "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.14",
+    "pug": "^3.0.2"
   }
 }
