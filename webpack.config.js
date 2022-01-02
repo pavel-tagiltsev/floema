@@ -16,7 +16,8 @@ const dirNode = 'node_modules'
 
 module.exports = {
   entry: [
-    path.join(dirApp, 'index.js')
+    path.join(dirApp, 'index.js'),
+    path.join(dirStyles, 'index.scss')
   ],
 
   resolve: {
@@ -70,7 +71,7 @@ module.exports = {
       },
 
       {
-        test: /\.csss$/,
+        test: /\.scss$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
